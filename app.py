@@ -157,7 +157,7 @@ def main():
                  f"a {numero(medias.loc[2024])} en 2024, con repuntes intermedios.")
         st.markdown("### 3. ¿Qué significa?")
         st.write("Observo comportamientos relacionados y una reducción entre los extremos del panel largo, pero no una mejora continua ni nacional. "
-                 "Ese panel incluye cuatro sitios de Bogotá y uno de Cesar. La cobertura cambia entre años y no he comprobado continuidad instrumental o independencia espacial. "
+                 "Ese panel incluye cuatro sitios de Bogotá y uno de Cesar. La cobertura cambia entre años. No he comprobado si se usaron instrumentos comparables ni si las mediciones de sitios cercanos dependen entre sí. "
                  "Las diferencias entre los grupos de estaciones tampoco equivalen a promedios representativos de los departamentos.")
         st.markdown("### 4. ¿Qué se recomendaría?")
         st.write("Recomendaría revisar la continuidad y las condiciones de medición de cada sitio antes de ampliar comparaciones. "
@@ -184,3 +184,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
