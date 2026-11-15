@@ -8,11 +8,13 @@ Los filtros de departamento y años actualizan la exploración. El selector de c
 
 ## Aplicación
 
-**Dashboard público:** [Abrir la aplicación](https://unad-t4-miguel-villabon-calidad-aire.streamlit.app/). Publicación y filtros verificados el 15 de noviembre de 2026.
+**Dashboard público:** [Abrir la aplicación](https://unad-t4-miguel-villabon-calidad-aire.streamlit.app/). Publicación, filtros y gráficos verificados por Codex el 15 de noviembre de 2026.
 
 ## Captura auténtica
 
-![Dashboard funcionando](imagenes/dashboard.jpg)
+![Barras de registros y distribución de PM10, todos los departamentos, 2024](imagenes/dashboard.jpg)
+
+Captura nativa de la aplicación pública, revisada abriendo el archivo guardado el 15 de noviembre de 2026. Las barras y la caja están completas; solo se recortó el margen exterior. Las otras cinco capturas se conservan en `imagenes/` y están incrustadas en el notebook académico.
 
 ## Hallazgos del EDA
 
