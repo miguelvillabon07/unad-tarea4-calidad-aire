@@ -81,7 +81,7 @@ def main():
                 fig, ax = plt.subplots(figsize=(8, max(3.5, len(conteos)*.28)))
                 barras = ax.barh(conteos.index, conteos.values, color=AZUL)
                 ax.bar_label(barras, padding=3)
-                ax.set(title=f"Registros anuales de {variable}", xlabel="Cantidad de registros", ylabel="Departamento")
+                ax.set(title=f"Registros anuales de {variable}", xlabel="Cantidad de registros", ylabel="")
                 ax.set_xlim(0, conteos.max()*1.18)
                 mostrar(fig)
             else:
@@ -184,4 +184,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
