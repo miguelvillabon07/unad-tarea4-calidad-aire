@@ -8,7 +8,7 @@ Los filtros de departamento y años actualizan la exploración. El selector de c
 
 ## Aplicación
 
-**Publicación en Streamlit Community Cloud:** pendiente de verificar. No se presenta una URL provisional como publicación terminada.
+**Dashboard público:** [Abrir la aplicación](https://unad-t4-miguel-villabon-calidad-aire.streamlit.app/). Publicación y filtros verificados el 15 de noviembre de 2026.
 
 ## Captura auténtica
 
