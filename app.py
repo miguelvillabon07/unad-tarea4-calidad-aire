@@ -1,4 +1,4 @@
-"""Dashboard académico: extensión comunicativa del EDA de Tarea 3."""
+"""Dashboard interactivo sobre calidad del aire con datos del IDEAM."""
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
@@ -72,7 +72,7 @@ def main():
 
     with graficos:
         st.header("Visualizaciones")
-        st.caption("Reutilizo las barras, el boxplot, la torta y la dispersión de la Parte 3. Se recalculan con la selección activa.")
+        st.caption("Los gráficos se actualizan con los filtros seleccionados.")
         izquierda, derecha = st.columns(2)
         with izquierda:
             st.subheader("1. Disponibilidad por departamento")
@@ -128,7 +128,7 @@ def main():
 
     with validacion:
         st.header("Validación estadística")
-        st.info("Referencia fija de la Tarea 3: PM2.5 de 2024, Antioquia y Cundinamarca. Esta comparación conserva su alcance y no cambia con los filtros exploratorios.")
+        st.info("Comparación de referencia: PM2.5 de 2024 en estaciones de Antioquia y Cundinamarca. Estos resultados no cambian con los filtros exploratorios.")
         resultado, _, _ = referencias_cache()
         st.dataframe(pd.DataFrame({"Departamento":["Antioquia", "Cundinamarca"],
             "Registros":[resultado["n_Antioquia"],resultado["n_Cundinamarca"]],
@@ -140,7 +140,7 @@ def main():
 
     with hallazgos:
         st.header("Hallazgos: una lectura para tomar decisiones")
-        st.caption("Síntesis fija del EDA original. Las dos figuras siguientes respaldan esta narrativa y conservan sus universos de referencia.")
+        st.caption("Resumen de los resultados del análisis. Las figuras utilizan los registros definidos para cada comparación.")
         _, referencia, continuo = referencias_cache()
         medias = continuo.groupby("Año")["Promedio"].mean()
         r_ref = referencia.corr().loc["PM10", "PM2.5"]
@@ -149,7 +149,6 @@ def main():
                  "Me concentré en PM10 y PM2.5, dos medidas de partículas en el aire, con exposición de referencia de 24 horas y cobertura temporal entre 75 y 100 %. "
                  "Los datos resumen cada año; no describen episodios diarios.")
         st.markdown("### 2. ¿Qué encontré?")
-        # Texto corregido de T4-C: asociación entre sitios, sin porcentajes ni efectos causales.
         st.write(f"En los {len(referencia)} sitios con ambos contaminantes en 2024, los sitios con mayor PM10 tienden a presentar mayor PM2.5. "
                  f"La correlación es {numero(r_ref,6)}, una medida de asociación que no demuestra que una partícula cause la otra. "
                  "Tampoco permite afirmar que controlar PM10 reduzca automáticamente PM2.5 ni sustituir su medición. "
@@ -180,7 +179,7 @@ def main():
                      "Conservo el CSV original, los nulos no excluidos por los filtros y los atípicos. "
                      "La clave de sitio combina departamento, municipio, autoridad, estación y coordenadas; no verifica por sí sola identidad física.")
             st.markdown("[Fuente oficial IDEAM: Calidad del Aire en Colombia, Promedio Anual](https://www.datos.gov.co/d/kekd-7v7h)")
-        st.caption("Miguel Angel Villabon Romero · Grupo 47 · UNAD · Programación para el análisis de datos, 203008069 · Noviembre de 2026. Desarrollo asistido por Codex y revisión con Gemini; trazabilidad en el notebook.")
+        st.caption("Miguel Angel Villabon Romero · Grupo 47 · UNAD · Programación para el Análisis de Datos (203008069) · Noviembre de 2026")
 
 if __name__ == "__main__":
     main()

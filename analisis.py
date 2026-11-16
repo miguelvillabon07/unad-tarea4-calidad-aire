@@ -1,4 +1,4 @@
-"""Recuperación reproducible de la metodología de Tarea 3, sin cambiar el CSV."""
+"""Preparación y análisis de los registros anuales de calidad del aire."""
 from pathlib import Path
 from decimal import Decimal, InvalidOperation
 import hashlib
