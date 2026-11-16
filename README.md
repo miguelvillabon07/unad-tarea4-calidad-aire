@@ -54,7 +54,7 @@ python -m venv .venv
 
 Activa el entorno virtual:
 
-- Windows (PowerShell): `\.venv\Scripts\Activate.ps1`
+- Windows (PowerShell): `.\.venv\Scripts\Activate.ps1`
 - Linux/macOS: `source .venv/bin/activate`
 
 Después instala las dependencias e inicia la aplicación:
