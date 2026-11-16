@@ -4,11 +4,11 @@ Este proyecto comunica el análisis exploratorio de la Tarea 3 mediante un dashb
 
 Conservo las 29.683 filas y 28 columnas del CSV original. La metodología documentada cuenta una representación por equivalencia en todas las columnas y obtiene 15.745 filas analíticas. Para PM10 y PM2.5 selecciono unidad `ugm3`, exposición de referencia de 24 horas, cobertura temporal de 75 a 100 % y número de datos positivo: quedan 1.665 registros anuales. El detalle está en `analisis.py`. Los resúmenes anuales no permiten reconstruir episodios diarios.
 
-Los filtros de departamento y años actualizan la exploración. El selector de contaminante modifica las métricas, las barras y la caja; la composición incluye ambos contaminantes y la dispersión usa el último año seleccionado. La prueba de Welch y la narrativa conservan el alcance del EDA original y están identificadas como referencias fijas. El código fue desarrollado con asistencia de Codex y revisado con Gemini; las interacciones completas se conservan en el notebook académico, fuera de este repositorio.
+Los filtros de departamento y años actualizan la exploración. El selector de contaminante modifica las métricas, las barras y la caja; la composición incluye ambos contaminantes y la dispersión usa el último año seleccionado. La prueba de Welch y la narrativa conservan el alcance del EDA original y están identificadas como referencias fijas. Las interacciones completas se conservan en el notebook académico, fuera de este repositorio.
 
 ## Aplicación
 
-**Dashboard público:** [Abrir la aplicación](https://unad-t4-miguel-villabon-calidad-aire.streamlit.app/). Publicación, filtros y gráficos verificados por Codex el 15 de noviembre de 2026.
+**Dashboard público:** [Abrir la aplicación](https://unad-t4-miguel-villabon-calidad-aire.streamlit.app/).
 
 ## Captura auténtica
 
